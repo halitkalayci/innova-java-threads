@@ -15,7 +15,6 @@ public class Terminal
     commands.add("tesseract");
     commands.add("C:\\Users\\klyyc\\Downloads\\belirsiz-sureli-is-sozlesmesi-1.png");
     commands.add("cikti");
-
     try{
       ProcessBuilder processBuilder = new ProcessBuilder(commands);
       processBuilder.redirectErrorStream(true);
