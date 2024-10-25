@@ -5,8 +5,12 @@ import java.util.concurrent.*;
 import java.util.concurrent.ScheduledExecutorService;
 
 public class ExecutorsExample {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
     // ExecutorService executor = Executors.newSingleThreadExecutor(); // Single-thread tek tek işlem
+
+    // Platform Thread -> İşletim sistemi üzerinde çalışan threadler
+
+    // Virtual Thread -> JVM tarafından yönetilir, daha hafif bir yapıya sahiptir. I/O
     ExecutorService executor = Executors.newFixedThreadPool(3);
     //ScheduledExecutorService executor = Executors.newScheduledThreadPool(3);
     for(int i=0; i<5; i++)
